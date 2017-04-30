@@ -14,11 +14,3 @@ function filterDir (err, list, fileExt) {
 readDir(process.argv[2], function (err, list) {
     filterDir(err, list, process.argv[3])
 });
-
-
-
-//read(process.argv[2], (err, list) => {
-//    if (err) throw err;
-//    var filteredList = list.filter(elem => ext(elem) === '.' + process.argv[3])
-//    filteredList.forEach(elem => console.log(elem))
-//})
