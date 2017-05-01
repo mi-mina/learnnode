@@ -14,10 +14,10 @@
     src stream to the dst stream. In this way you can connect a filesystem  
     stream with an HTTP response stream.
 */
-var http = require('http');
-var fs = require('fs');
-var port = Number(process.argv[2]);
-var fileLocation = process.argv[3];
+const http = require('http');
+const fs = require('fs');
+const port = Number(process.argv[2]);
+const fileLocation = process.argv[3];
 
 var server = http.createServer(function (req, res) {
     res.writeHead(200, { 'content-type': 'text/plain' });

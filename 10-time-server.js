@@ -20,10 +20,9 @@
     written to. For this exercise we only need to write data and then close  
     the socket.
 */
-var net = require("net");
-var strf =require("strftime");
-
-var port = process.argv[2];
+const net = require("net");
+const strf =require("strftime");
+const port = process.argv[2];
 
 var server = net.createServer(function (socket) {
     // We have a connection - a socket object is assigned to the connection automatically

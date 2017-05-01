@@ -1,5 +1,5 @@
-var http = require('http');
-var port = Number(process.argv[2]);
+const http = require('http');
+const port = Number(process.argv[2]);
 
 /* 
     https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/
